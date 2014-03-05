@@ -4,8 +4,8 @@
 [submodule ".vim/bundle/ctrlp.vim"]
 	path = .vim/bundle/ctrlp.vim
 	url = https://github.com/kien/ctrlp.vim.git
-[submodule ".vim/bundle/vim-qml"]
-	path = .vim/bundle/vim-qml
+[submodule ".vim/bundle/qml.vim"]
+	path = .vim/bundle/qml.vim
 	url = https://github.com/thp/vim-qml.git
 [submodule ".vim/bundle/rainbow_parentheses.vim"]
 	path = .vim/bundle/rainbow_parentheses.vim
