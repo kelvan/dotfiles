@@ -2,6 +2,9 @@
 
 ABSOLUTE_PATH=$(cd `dirname "${BASH_SOURCE[0]}"` && pwd)
 
+git submodule init
+git submodule update
+
 mkdir ~/.zsh
 wget -O .zsh/zshrc_grml        http://git.grml.org/f/grml-etc-core/etc/zsh/zshrc
 touch ~/.zsh/zshrc_personal
