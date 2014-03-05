@@ -1,0 +1,1 @@
+/home/kelvan/workspace/python/django/django-template-i18n-lint/vim-helpers.vim
