@@ -9,10 +9,16 @@ set softtabstop=4
 set shiftwidth=4
 set shiftround
 set expandtab
+se ai
 retab
 syntax on
 filetype plugin on
 set ofu=syntaxcomplete#Complete
+
+autocmd FileType html setlocal shiftwidth=2 tabstop=2 softtabstop=2
+autocmd FileType css setlocal shiftwidth=2 tabstop=2 softtabstop=2
+autocmd FileType js setlocal shiftwidth=2 tabstop=2 softtabstop=2
+autocmd FileType ruby setlocal shiftwidth=2 tabstop=2 softtabstop=2
 
 " highlight tabs and trailing spaces
 set listchars=tab:>-,trail:-
