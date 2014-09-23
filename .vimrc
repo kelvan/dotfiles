@@ -9,8 +9,11 @@ set softtabstop=4
 set shiftwidth=4
 set shiftround
 set expandtab
-se ai
+set autoindent
 retab
+
+set modeline
+
 syntax on
 filetype plugin on
 set ofu=syntaxcomplete#Complete
