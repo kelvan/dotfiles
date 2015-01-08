@@ -28,7 +28,7 @@ set listchars=tab:>-,trail:-
 set list
 
 " remove trailing spaces before saving
-autocmd BufWritePre * :%s/\s\+$//e
+"autocmd BufWritePre * :%s/\s\+$//e
 
 " Automatic reloading of .vimrc
 " missing?
