@@ -41,6 +41,9 @@ autocmd FileType c,cpp,python,txt,sh,html,tpl autocmd BufWritePre <buffer> :%s/\
 set pastetoggle=<F2>
 set clipboard=unnamed
 
+" insert date using F5 in insert mode
+:inoremap <F5> <C-R>=strftime("%F")<CR>
+
 " Mouse
 "set mouse=a
 
