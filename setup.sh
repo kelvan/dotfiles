@@ -11,5 +11,8 @@ touch ~/.zsh/zshrc_personal
 ln -s $ABSOLUTE_PATH/tmuxinator.zsh ~/.zsh/tmuxinator.zsh
 ln -s $ABSOLUTE_PATH/.zshrc ~/.zshrc
 ln -s $ABSOLUTE_PATH/.vimrc ~/.vimrc
-ln -s $ABSOLUTE_PATH/.vim ~/.vim
+if [ ! -d "$ABSOLUTE_PATH/.vim" ]; then
+  ln -s $ABSOLUTE_PATH/.vim ~/.vim
+fi
+
 ln -s $ABSOLUTE_PATH/.Xmodmap ~/.Xmodmap
