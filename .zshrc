@@ -2,8 +2,9 @@
 source ~/.zsh/zshrc_grml
 
 # Local variables:
-export PATH=$PATH:$HOME/bin
+PATH=$PATH:$HOME/bin
 # systemd shortcuts
+alias status="systemctl status"
 alias start="sudo systemctl start"
 alias restart="sudo systemctl restart"
 alias stop="sudo systemctl stop"
@@ -19,15 +20,16 @@ alias :q="exit"
 alias dd="ionice -c 3 /usr/bin/dd"
 
 # vim, what else?
-export EDITOR=vim
+EDITOR="vim"
 # show non crappy timestamps
-export TIME_STYLE=long-iso
+TIME_STYLE="long-iso"
 
 # own client specific stuff
 source ~/.zsh/zshrc_personal
 
-# tmux completion
+# tmux
 source ~/.zsh/tmuxinator.zsh
+export TERM="xterm-256color"
 
 # mode: sh
 # End:
