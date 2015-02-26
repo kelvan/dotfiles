@@ -8,6 +8,7 @@ git submodule update --recursive
 mkdir ~/.zsh
 wget -O ~/.zsh/zshrc_grml http://git.grml.org/f/grml-etc-core/etc/zsh/zshrc
 touch ~/.zsh/zshrc_personal
+ln -s $ABSOLUTE_PATH/tmuxinator.zsh ~/.zsh/tmuxinator.zsh
 ln -s $ABSOLUTE_PATH/.zshrc ~/.zshrc
 ln -s $ABSOLUTE_PATH/.vimrc ~/.vimrc
 ln -s $ABSOLUTE_PATH/.vim ~/.vim

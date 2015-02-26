@@ -26,6 +26,9 @@ export TIME_STYLE=long-iso
 # own client specific stuff
 source ~/.zsh/zshrc_personal
 
+# tmux completion
+source ~/.zsh/tmuxinator.zsh
+
 # mode: sh
 # End:
 ## END OF FILE #################################################################
