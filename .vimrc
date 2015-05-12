@@ -18,7 +18,8 @@ syntax on
 filetype plugin on
 set ofu=syntaxcomplete#Complete
 
-autocmd FileType html setlocal shiftwidth=2 tabstop=2 softtabstop=2
+autocmd FileType html setlocal ai shiftwidth=2 tabstop=2 softtabstop=2
+autocmd BufEnter *.html set ai sw=2 ts=2 softtabstop=2
 autocmd FileType css setlocal shiftwidth=2 tabstop=2 softtabstop=2
 autocmd FileType js setlocal shiftwidth=2 tabstop=2 softtabstop=2
 autocmd FileType ruby setlocal shiftwidth=2 tabstop=2 softtabstop=2
