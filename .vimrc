@@ -92,22 +92,6 @@ set nobackup
 set nowritebackup
 set noswapfile
 
-" Settings for jedi-vim
-" cd ~/.vim/bundle
-" git clone git://github.com/davidhalter/jedi-vim.git
-" let g:jedi#related_names_command = "<leader>z"
-" let g:jedi#popup_on_dot = 0
-" let g:jedi#popup_select_first = 0
-" map <Leader>b Oimport ipdb; ipdb.set_trace() # BREAKPOINT<C-c>
-
-let g:jedi#goto_assignments_command = "<leader>g"
-let g:jedi#goto_definitions_command = "<leader>d"
-let g:jedi#documentation_command = "K"
-let g:jedi#usages_command = "<leader>n"
-let g:jedi#completions_command = "<C-Space>"
-let g:jedi#rename_command = "<leader>r"
-let g:jedi#show_call_signatures = "1"
-
 " Better navigating through omnicomplete option list
 " See
 " http://stackoverflow.com/questions/2170023/how-to-map-keys-for-popup-menu-in-vim
@@ -129,7 +113,7 @@ let g:jedi#show_call_signatures = "1"
 " http://www.vim.org/scripts/download_script.php?src_id=5492
 set nofoldenable
 
-execute pathogen#infect()
+"execute pathogen#infect()
 
 au VimEnter * RainbowParenthesesToggle
 au Syntax * RainbowParenthesesLoadRound
