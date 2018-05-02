@@ -2,8 +2,6 @@ source ~/.zsh/zshrc_base
 
 # Local variables:
 PATH=$PATH:$HOME/bin
-# commit etc to git and upgrade arch
-alias upgrade="sudo etckeeper commit -m '.' ; sudo pacman -Syu ; sudo etckeeper commit -m '.' ; clean"
 
 # a little bit of vim
 alias :q="exit"
