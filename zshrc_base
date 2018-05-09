@@ -58,8 +58,12 @@ bindkey "[1;5C" forward-word
 bindkey "[1;3D" backward-word
 bindkey "[1;3C" forward-word
 
-bindkey $key[Up] history-beginning-search-backward
-bindkey $key[Down] history-beginning-search-forward
+autoload history-search-end
+zle -N history-beginning-search-forward-end history-search-end
+zle -N history-beginning-search-backward-end history-search-end
+
+bindkey $key[Up] history-beginning-search-backward-end
+bindkey $key[Down] history-beginning-search-forward-end
 
 autoload bashcompinit
 bashcompinit
