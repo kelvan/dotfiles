@@ -88,6 +88,19 @@ SAVEHIST=1000
 setopt SHARE_HISTORY
 setopt HIST_IGNORE_DUPS
 
+# FZF
+
+FZF_KEYBINDINGS="/usr/share/fzf/key-bindings.zsh"
+FZF_COMPLETION="/usr/share/fzf/completion.zsh"
+
+if [ -f $FZF_KEYBINDINGS ]; then
+    . $FZF_KEYBINDINGS
+fi
+
+if [ -f $FZF_COMPLETION ]; then
+    . $FZF_COMPLETION
+fi
+
 #xfreedrp with "fullscreen" resolution and clipboard
 alias mstsc="xfreerdp +clipboard +compression +fonts -wallpaper  /drive:home,$HOME/rdp /size:1366x752"
 
