@@ -121,3 +121,7 @@ if [ -d "$HOME/bin" ] ; then
 fi
 
 
+if [ -f "$HOME/env/bin/activate" ]; then
+    . $HOME/env/bin/activate
+fi
+
