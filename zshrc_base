@@ -65,8 +65,7 @@ zle -N history-beginning-search-backward-end history-search-end
 bindkey $key[Up] history-beginning-search-backward-end
 bindkey $key[Down] history-beginning-search-forward-end
 
-autoload bashcompinit
-bashcompinit
+autoload -Uz compinit && compinit
 
 # Finally, make sure the terminal is in application mode, when zle is
 # active. Only then are the values from $terminfo valid.
