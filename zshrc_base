@@ -120,8 +120,3 @@ if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
 
-
-if [ -f "$HOME/env/bin/activate" ]; then
-    . $HOME/env/bin/activate
-fi
-
