@@ -6,6 +6,8 @@ PATH=$PATH:$HOME/bin
 # a little bit of vim
 alias :q="exit"
 
+alias git_dotfiles='git --git-dir=$HOME/.git_dotfiles/ --work-tree=$HOME'
+
 # own client specific stuff
 source ~/.zsh/zshrc_personal
 
