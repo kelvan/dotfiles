@@ -82,10 +82,11 @@ fi
 
 #history shared accross teminals
 HISTFILE=~/.zsh_history
-HISTSIZE=1000
-SAVEHIST=1000
+HISTSIZE=5000
+SAVEHIST=5000
 setopt SHARE_HISTORY
 setopt HIST_IGNORE_DUPS
+setopt histignorespace
 
 # FZF
 
@@ -117,10 +118,5 @@ alias rsync_="rsync -avz --partial --progress --inplace"
 # set PATH so it includes user's private bin if it exists
 if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
-fi
-
-
-if [ -f "$HOME/env/bin/activate" ]; then
-    . $HOME/env/bin/activate
 fi
 
