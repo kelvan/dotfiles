@@ -8,3 +8,5 @@ Add to .git_dotfiles/config
 	showUntrackedFiles = no
 
 git --git-dir=$HOME/.git_dotfiles/ --work-tree=$HOME checkout
+
+touch $HOME/.zsh/zshrc_personal
