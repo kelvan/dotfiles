@@ -18,23 +18,25 @@ syntax on
 filetype plugin on
 set ofu=syntaxcomplete#Complete
 
-autocmd FileType html setlocal ai shiftwidth=2 tabstop=2 softtabstop=2
-autocmd BufEnter *.html set ai sw=2 ts=2 softtabstop=2
-autocmd FileType css setlocal shiftwidth=2 tabstop=2 softtabstop=2
-autocmd FileType js setlocal shiftwidth=2 tabstop=2 softtabstop=2
-autocmd FileType ruby setlocal shiftwidth=2 tabstop=2 softtabstop=2
+augroup FileTypes
+    autocmd FileType html setlocal ai shiftwidth=2 tabstop=2 softtabstop=2
+    autocmd BufEnter *.html set ai sw=2 ts=2 softtabstop=2
+    autocmd FileType css setlocal shiftwidth=2 tabstop=2 softtabstop=2
+    autocmd FileType js setlocal shiftwidth=2 tabstop=2 softtabstop=2
+    autocmd FileType ruby setlocal shiftwidth=2 tabstop=2 softtabstop=2
 
-" highlight tabs and trailing spaces
-set listchars=tab:>-,trail:-
-set list
+    " highlight tabs and trailing spaces
+    set listchars=tab:>-,trail:-
+    set list
 
-" remove trailing spaces before saving
-"autocmd BufWritePre * :%s/\s\+$//e
+    " remove trailing spaces before saving
+    "autocmd BufWritePre * :%s/\s\+$//e
 
-" Automatic reloading of .vimrc
-" missing?
+    " Automatic reloading of .vimrc
+    " missing?
 
-autocmd FileType c,cpp,python,txt,sh,html,tpl autocmd BufWritePre <buffer> :%s/\s\+$//e
+    autocmd FileType c,cpp,python,txt,sh,html,tpl autocmd BufWritePre <buffer> :%s/\s\+$//e
+augroup END
 
 " Better copy & paste
 " When you want to paste large blocks of code into vim, press F2 before you
